@@ -8,7 +8,6 @@
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--bx:#0052ff;--gx:#111827;--wx:#ffffff;--sx:#f3f4f6;--zx:#e5e7eb}
-html,body{height:100%}
 body{margin:0;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--wx);color:var(--gx)}
 .a0{position:sticky;top:0;z-index:50;background:var(--wx);border-bottom:1px solid var(--zx)}
 .a1{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:12px}
@@ -26,30 +25,7 @@ body{margin:0;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubun
 .a9:before,.a9:after{content:"";position:absolute;inset:0;height:2px;background:#111;border-radius:2px;transform-origin:center}
 .a9:before{transform:translateY(-6px)}
 .a9:after{transform:translateY(6px)}
-.b0{max-width:1200px;margin:0 auto;padding:38px 16px 64px}
-.b1{display:grid;gap:22px}
-.b2{display:grid;gap:12px}
-.b3{font-weight:800;font-size:28px;line-height:1.25}
-.b4{font-size:15px;color:#4b5563}
-.b5{display:flex;gap:10px}
-.b6{padding:14px 18px;border-radius:14px;background:var(--bx);color:#fff;border:none;font-size:15px;cursor:pointer}
-.b6:active{transform:scale(.985)}
-.b7{padding:14px 18px;border-radius:14px;background:#f3f6ff;color:#1f2a44;border:1px solid #dbe4ff;font-size:15px;cursor:pointer}
-.b8{display:grid;gap:14px;margin-top:26px}
-.b9{display:grid;grid-template-columns:1fr;gap:14px}
-.c0{border:1px solid var(--zx);border-radius:18px;padding:18px;background:#fff}
-.c1{font-weight:700;margin:0 0 8px 0}
-.c2{font-size:14px;color:#6b7280;margin:0}
-@media(min-width:768px){
-  .a4{display:flex}
-  .a8{display:none}
-  .b1{grid-template-columns:1.1fr .9fr;align-items:center}
-  .b9{grid-template-columns:repeat(3,1fr)}
-  .b3{font-size:38px}
-}
-@media(min-width:1024px){
-  .b3{font-size:44px}
-}
+@media(min-width:768px){.a4{display:flex}.a8{display:none}}
 </style>
 </head>
 <body>
@@ -72,30 +48,6 @@ body{margin:0;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubun
     </div>
   </div>
 </header>
-
-<main class="b0">
-  <section class="b1">
-    <div class="b2">
-      <h1 class="b3">منصّة حديثة بواجهة بيضاء نظيفة وتجربة سلسة</h1>
-      <p class="b4">تصميم عصري بتركيز على السرعة والبساطة، مع ألوان هادئة وهوية زرقاء أنيقة تناسب جميع الأجهزة.</p>
-      <div class="b5">
-        <button class="b6" type="button">جرّب الآن</button>
-        <button class="b7" type="button">معرفة المزيد</button>
-      </div>
-      <div class="b8">
-        <div class="b9">
-          <div class="c0"><h3 class="c1">أمان عالي</h3><p class="c2">بنية متوازنة وتجربة استخدام ثابتة.</p></div>
-          <div class="c0"><h3 class="c1">سرعة وأداء</h3><p class="c2">استجابة ممتازة على الجوال وسطح المكتب.</p></div>
-          <div class="c0"><h3 class="c1">واجهة نظيفة</h3><p class="c2">مساحات بيضاء وخط واضح ومريح.</p></div>
-        </div>
-      </div>
-    </div>
-    <div class="c0" style="min-height:280px;display:flex;align-items:center;justify-content:center">
-      <div style="width:100%;height:200px;border:1px dashed var(--zx);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#6b7280">مساحة لمعاينة المحتوى</div>
-    </div>
-  </section>
-</main>
-
 <script>
 (()=>{const e=document.getElementById("m0");let t=!1;const n=`<nav class="a4" id="mm" style="display:grid;gap:10px;margin:10px 16px">
 <a href="#">الرئيسية</a><a href="#">الخدمات</a><a href="#">الشركات</a><a href="#">المطورون</a><a href="#">عنّا</a>
