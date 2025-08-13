@@ -10,34 +10,17 @@
 body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
 .hx{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--bd)}
 .hc{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center}
-.hl{display:inline-flex;align-items:center}
+.hl{font-weight:800;font-size:20px;letter-spacing:.3px;color:var(--p);user-select:none}
 .sp{margin-inline-start:auto}
 .si{display:inline-flex;align-items:center;font-weight:600;font-size:15px;color:var(--p);text-decoration:none}
 .si:active{opacity:.85}
-.lg{width:32px;height:32px;display:inline-block}
-@media(min-width:768px){.hc{padding:16px}.si{font-size:16px}.lg{width:34px;height:34px}}
+@media(min-width:768px){.hc{padding:16px}.hl{font-size:22px}.si{font-size:16px}}
 </style>
 </head>
 <body>
 <header class="hx">
   <div class="hc">
-    <div class="hl">
-      <svg class="lg" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#4f8bff"/>
-            <stop offset="1" stop-color="#0052ff"/>
-          </linearGradient>
-          <linearGradient id="grad2" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/>
-            <stop offset="1" stop-color="#dbe7ff" stop-opacity=".5"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="30" fill="url(#grad1)"/>
-        <path d="M20 20 L44 32 L20 44 Z" fill="url(#grad2)"/>
-        <circle cx="32" cy="32" r="6" fill="url(#grad2)"/>
-      </svg>
-    </div>
+    <div class="hl">Verta</div>
     <div class="sp"></div>
     <a class="si" href="#">Sign in</a>
   </div>
