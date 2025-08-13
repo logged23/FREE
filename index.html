@@ -2,56 +2,35 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BlueX</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@600;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-:root{--bx:#0052ff;--gx:#111827;--wx:#ffffff;--sx:#f3f4f6;--zx:#e5e7eb}
-body{margin:0;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--wx);color:var(--gx)}
-.a0{position:sticky;top:0;z-index:50;background:var(--wx);border-bottom:1px solid var(--zx)}
-.a1{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:12px}
-.a2{display:flex;align-items:center;gap:28px}
-.a3{font-weight:800;font-size:22px;letter-spacing:.2px;color:var(--bx)}
-.a4{display:none;align-items:center;gap:18px}
-.a4 a{font-size:14px;text-decoration:none;color:#4b5563;padding:8px 4px;border-radius:10px;transition:.2s}
-.a4 a:hover{background:var(--sx)}
-.a5{margin-inline-start:auto;display:flex;align-items:center;gap:10px}
-.a6,.a7{font-size:14px;border-radius:12px;padding:10px 14px;line-height:1;border:1px solid var(--zx);background:#f9fafb;color:#374151;cursor:pointer}
-.a7{background:var(--bx);border-color:var(--bx);color:#fff}
-.a6:active,.a7:active{transform:scale(.98)}
-.a8{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;border:1px solid var(--zx);background:#fff}
-.a9{width:20px;height:2px;background:#111;border-radius:2px;position:relative}
-.a9:before,.a9:after{content:"";position:absolute;inset:0;height:2px;background:#111;border-radius:2px;transform-origin:center}
-.a9:before{transform:translateY(-6px)}
-.a9:after{transform:translateY(6px)}
-@media(min-width:768px){.a4{display:flex}.a8{display:none}}
+:root{--c1:#0052ff;--c2:#0b1220;--c3:#ffffff;--c4:#eef2f7;--c5:#e6eaf0}
+html,body{height:100%}
+body{margin:0;background:#fff;color:var(--c2);font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+.hx{position:sticky;top:0;z-index:50;background:var(--c3);border-bottom:1px solid var(--c5)}
+.hi{max-width:1100px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:center}
+.hw{display:inline-flex;align-items:center;gap:14px;border:1px solid var(--c5);background:var(--c3);border-radius:999px;padding:8px 14px;box-shadow:0 1px 0 rgba(8,15,35,.04)}
+.bx{appearance:none;-webkit-appearance:none;border:1px solid var(--c5);background:#f7f9fc;color:#1f2637;font-size:14px;line-height:1;padding:10px 14px;border-radius:999px;cursor:pointer;transition:transform .12s ease,opacity .12s ease}
+.bx:hover{opacity:.95}
+.bx:active{transform:scale(.98)}
+.nx{font-weight:800;letter-spacing:.2px;font-size:18px;color:var(--c1);user-select:none}
+@media(min-width:480px){.nx{font-size:20px}.bx{font-size:15px}}
+@media(min-width:768px){.hi{padding:16px}.nx{font-size:22px}}
+main{height:calc(100vh - 66px);background:linear-gradient(#fff,#fff)}
 </style>
 </head>
 <body>
-<header class="a0">
-  <div class="a1">
-    <div class="a2">
-      <div class="a3">BlueX</div>
-      <nav class="a4">
-        <a href="#">الرئيسية</a>
-        <a href="#">الخدمات</a>
-        <a href="#">الشركات</a>
-        <a href="#">المطورون</a>
-        <a href="#">عنّا</a>
-      </nav>
-    </div>
-    <div class="a5">
-      <button class="a6" type="button">تسجيل الدخول</button>
-      <button class="a7" type="button">ابدأ الآن</button>
-      <button class="a8" id="m0" aria-label="menu" type="button"><span class="a9"></span></button>
+<header class="hx">
+  <div class="hi">
+    <div class="hw" aria-label="primary">
+      <button class="bx" type="button">Sign in</button>
+      <div class="nx">BlueX</div>
     </div>
   </div>
 </header>
-<script>
-(()=>{const e=document.getElementById("m0");let t=!1;const n=`<nav class="a4" id="mm" style="display:grid;gap:10px;margin:10px 16px">
-<a href="#">الرئيسية</a><a href="#">الخدمات</a><a href="#">الشركات</a><a href="#">المطورون</a><a href="#">عنّا</a>
-<div style="display:flex;gap:10px;margin-top:6px"><button class="a6" type="button">تسجيل الدخول</button><button class="a7" type="button">ابدأ الآن</button></div></nav>`;const r=document.querySelector(".a1");e&&e.addEventListener("click",()=>{t=!t;let a=document.getElementById("mm");if(t){a||r.insertAdjacentHTML("afterend",n)}else{a&&a.remove()}})})();
-</script>
+<main></main>
 </body>
 </html>
