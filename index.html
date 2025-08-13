@@ -2,17 +2,104 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>BitHive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BlueX</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
 <style>
-html,body{margin:0;padding:0;background:#fff}
-._x9{background:#1a1a1a;height:56px;display:flex;align-items:center;justify-content:flex-end;
-padding-right:calc(12px + env(safe-area-inset-right,0px));box-sizing:border-box}
-._t7{font:700 20px system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#ffcc00;letter-spacing:.2px}
-@media(min-width:768px){._x9{height:64px;padding-right:24px}. _t7{font-size:22px}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--bx:#0052ff;--gx:#111827;--wx:#ffffff;--sx:#f3f4f6;--zx:#e5e7eb}
+html,body{height:100%}
+body{margin:0;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--wx);color:var(--gx)}
+.a0{position:sticky;top:0;z-index:50;background:var(--wx);border-bottom:1px solid var(--zx)}
+.a1{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;gap:12px}
+.a2{display:flex;align-items:center;gap:28px}
+.a3{font-weight:800;font-size:22px;letter-spacing:.2px;color:var(--bx)}
+.a4{display:none;align-items:center;gap:18px}
+.a4 a{font-size:14px;text-decoration:none;color:#4b5563;padding:8px 4px;border-radius:10px;transition:.2s}
+.a4 a:hover{background:var(--sx)}
+.a5{margin-inline-start:auto;display:flex;align-items:center;gap:10px}
+.a6,.a7{font-size:14px;border-radius:12px;padding:10px 14px;line-height:1;border:1px solid var(--zx);background:#f9fafb;color:#374151;cursor:pointer}
+.a7{background:var(--bx);border-color:var(--bx);color:#fff}
+.a6:active,.a7:active{transform:scale(.98)}
+.a8{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;border:1px solid var(--zx);background:#fff}
+.a9{width:20px;height:2px;background:#111;border-radius:2px;position:relative}
+.a9:before,.a9:after{content:"";position:absolute;inset:0;height:2px;background:#111;border-radius:2px;transform-origin:center}
+.a9:before{transform:translateY(-6px)}
+.a9:after{transform:translateY(6px)}
+.b0{max-width:1200px;margin:0 auto;padding:38px 16px 64px}
+.b1{display:grid;gap:22px}
+.b2{display:grid;gap:12px}
+.b3{font-weight:800;font-size:28px;line-height:1.25}
+.b4{font-size:15px;color:#4b5563}
+.b5{display:flex;gap:10px}
+.b6{padding:14px 18px;border-radius:14px;background:var(--bx);color:#fff;border:none;font-size:15px;cursor:pointer}
+.b6:active{transform:scale(.985)}
+.b7{padding:14px 18px;border-radius:14px;background:#f3f6ff;color:#1f2a44;border:1px solid #dbe4ff;font-size:15px;cursor:pointer}
+.b8{display:grid;gap:14px;margin-top:26px}
+.b9{display:grid;grid-template-columns:1fr;gap:14px}
+.c0{border:1px solid var(--zx);border-radius:18px;padding:18px;background:#fff}
+.c1{font-weight:700;margin:0 0 8px 0}
+.c2{font-size:14px;color:#6b7280;margin:0}
+@media(min-width:768px){
+  .a4{display:flex}
+  .a8{display:none}
+  .b1{grid-template-columns:1.1fr .9fr;align-items:center}
+  .b9{grid-template-columns:repeat(3,1fr)}
+  .b3{font-size:38px}
+}
+@media(min-width:1024px){
+  .b3{font-size:44px}
+}
 </style>
 </head>
 <body>
-<header class="_x9"><span class="_t7">BitHive</span></header>
+<header class="a0">
+  <div class="a1">
+    <div class="a2">
+      <div class="a3">BlueX</div>
+      <nav class="a4">
+        <a href="#">الرئيسية</a>
+        <a href="#">الخدمات</a>
+        <a href="#">الشركات</a>
+        <a href="#">المطورون</a>
+        <a href="#">عنّا</a>
+      </nav>
+    </div>
+    <div class="a5">
+      <button class="a6" type="button">تسجيل الدخول</button>
+      <button class="a7" type="button">ابدأ الآن</button>
+      <button class="a8" id="m0" aria-label="menu" type="button"><span class="a9"></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="b0">
+  <section class="b1">
+    <div class="b2">
+      <h1 class="b3">منصّة حديثة بواجهة بيضاء نظيفة وتجربة سلسة</h1>
+      <p class="b4">تصميم عصري بتركيز على السرعة والبساطة، مع ألوان هادئة وهوية زرقاء أنيقة تناسب جميع الأجهزة.</p>
+      <div class="b5">
+        <button class="b6" type="button">جرّب الآن</button>
+        <button class="b7" type="button">معرفة المزيد</button>
+      </div>
+      <div class="b8">
+        <div class="b9">
+          <div class="c0"><h3 class="c1">أمان عالي</h3><p class="c2">بنية متوازنة وتجربة استخدام ثابتة.</p></div>
+          <div class="c0"><h3 class="c1">سرعة وأداء</h3><p class="c2">استجابة ممتازة على الجوال وسطح المكتب.</p></div>
+          <div class="c0"><h3 class="c1">واجهة نظيفة</h3><p class="c2">مساحات بيضاء وخط واضح ومريح.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="c0" style="min-height:280px;display:flex;align-items:center;justify-content:center">
+      <div style="width:100%;height:200px;border:1px dashed var(--zx);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#6b7280">مساحة لمعاينة المحتوى</div>
+    </div>
+  </section>
+</main>
+
+<script>
+(()=>{const e=document.getElementById("m0");let t=!1;const n=`<nav class="a4" id="mm" style="display:grid;gap:10px;margin:10px 16px">
+<a href="#">الرئيسية</a><a href="#">الخدمات</a><a href="#">الشركات</a><a href="#">المطورون</a><a href="#">عنّا</a>
+<div style="display:flex;gap:10px;margin-top:6px"><button class="a6" type="button">تسجيل الدخول</button><button class="a7" type="button">ابدأ الآن</button></div></nav>`;const r=document.querySelector(".a1");e&&e.addEventListener("click",()=>{t=!t;let a=document.getElementById("mm");if(t){a||r.insertAdjacentHTML("afterend",n)}else{a&&a.remove()}})})();
+</script>
 </body>
 </html>
