@@ -12,8 +12,10 @@ body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-
 .hc{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center}
 .hl{font-weight:800;font-size:20px;letter-spacing:.3px;color:var(--p);user-select:none}
 .sp{margin-inline-start:auto}
-.si{display:inline-flex;align-items:center;font-weight:600;font-size:15px;color:var(--p);text-decoration:none}
-.si:active{opacity:.85}
+.si{position:relative;display:inline-flex;align-items:center;font-weight:600;font-size:15px;color:var(--p);background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:6px;transition:background .15s ease}
+.si::after{content:"";position:absolute;inset:0;background:var(--p);opacity:0;border-radius:6px;transition:opacity .15s ease}
+.si:active::after{opacity:.15}
+.si span{position:relative;z-index:1}
 @media(min-width:768px){.hc{padding:16px}.hl{font-size:22px}.si{font-size:16px}}
 </style>
 </head>
@@ -22,7 +24,7 @@ body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-
   <div class="hc">
     <div class="hl">Verta</div>
     <div class="sp"></div>
-    <a class="si" href="#">Sign in</a>
+    <button class="si" type="button"><span>Sign in</span></button>
   </div>
 </header>
 </body>
