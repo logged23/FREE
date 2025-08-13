@@ -6,26 +6,41 @@
 <title>Verta</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-:root{--p:#0052ff;--tx:#0f172a;--bd:#e6ecf3;--bg:#ffffff}
+:root{--p:#0a58ff;--tx:#0f172a;--bd:#e6ecf3;--bg:#ffffff}
 body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
-.hx{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--bd)}
-.hc{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center}
-.hl{font-weight:800;font-size:20px;letter-spacing:.3px;color:var(--p);user-select:none}
-.sp{margin-inline-start:auto}
-.si{position:relative;display:inline-flex;align-items:center;font-weight:600;font-size:15px;color:var(--p);background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:6px;transition:background .15s ease}
-.si::after{content:"";position:absolute;inset:0;background:var(--p);opacity:0;border-radius:6px;transition:opacity .15s ease}
-.si:active::after{opacity:.15}
-.si span{position:relative;z-index:1}
-@media(min-width:768px){.hc{padding:16px}.hl{font-size:22px}.si{font-size:16px}}
+.vh{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--bd)}
+.vc{max-width:1200px;margin:0 auto;padding:14px 16px;display:flex;align-items:center}
+.vn{font-weight:800;font-size:20px;letter-spacing:.3px;color:var(--p);user-select:none}
+.vs{margin-inline-start:auto;position:relative}
+.vb{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;border-radius:12px;border:1px solid var(--bd);background:#f7f9fc;color:var(--p);font-weight:700;font-size:15px;cursor:pointer;outline:0;overflow:hidden;isolation:isolate;transition:transform .14s ease,box-shadow .18s ease,background .18s ease}
+.vb:active{transform:scale(.985)}
+.vi{width:16px;height:16px;opacity:.0;transform:translateY(4px);transition:opacity .18s ease,transform .18s ease}
+.vb:hover .vi,
+.vb:focus-visible .vi{opacity:.32;transform:translateY(0)}
+.vb::before{content:"";position:absolute;inset:auto 14px -10px 14px;height:22px;border-radius:999px;background:radial-gradient(60% 90% at 50% 50%,rgba(10,88,255,.18),rgba(10,88,255,0));opacity:0;transition:opacity .18s ease}
+.vb:hover::before,
+.vb:focus-visible::before{opacity:1}
+.vr{position:absolute;inset:0;border-radius:inherit;pointer-events:none;mix-blend:normal}
+.vr span{position:absolute;border-radius:999px;transform:translate(-50%,-50%) scale(0);opacity:.26;background:radial-gradient(closest-side,rgba(10,88,255,.2),rgba(10,88,255,.08) 60%,transparent 65%);width:6px;height:6px;animation:rk .6s ease-out forwards}
+@keyframes rk{to{transform:translate(-50%,-50%) scale(28);opacity:0}}
+@media(min-width:768px){.vc{padding:16px}.vn{font-size:22px}.vb{font-size:16px}}
 </style>
 </head>
 <body>
-<header class="hx">
-  <div class="hc">
-    <div class="hl">Verta</div>
-    <div class="sp"></div>
-    <button class="si" type="button"><span>Sign in</span></button>
+<header class="vh">
+  <div class="vc">
+    <div class="vn">Verta</div>
+    <div class="vs">
+      <button class="vb" type="button" id="sx">
+        <svg class="vi" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2" fill="none" stroke="#0a58ff" stroke-width="1.6" stroke-linecap="round"/><rect x="4.8" y="10" width="14.4" height="9.2" rx="2.2" fill="none" stroke="#0a58ff" stroke-width="1.6"/></svg>
+        <span>Sign in</span>
+        <div class="vr" aria-hidden="true"></div>
+      </button>
+    </div>
   </div>
 </header>
+<script>
+(()=>{const e=document.getElementById("sx"),n=e.querySelector(".vr");let t=!1;e.addEventListener("pointerdown",o=>{t=!0;const r=document.createElement("span"),a=e.getBoundingClientRect(),i=o.clientX-a.left,c=o.clientY-a.top;n.appendChild(r);r.style.left=i+"px";r.style.top=c+"px";r.addEventListener("animationend",()=>{r.remove()},{once:!0})});e.addEventListener("pointerup",()=>{t=!1});e.addEventListener("pointerleave",()=>{t=!1});})();
+</script>
 </body>
 </html>
